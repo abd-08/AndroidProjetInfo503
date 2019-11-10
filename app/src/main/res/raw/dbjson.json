@@ -1,0 +1,14 @@
+[
+  {
+    "nom" : "ma catégorie",
+    "liste" : [
+      {
+        "nom" : "mon 1er choix",
+        "prenom":"test",
+        "groupe": 2,
+        "photo": null,
+        "etat": "absent"
+      }
+    ]
+  }
+]

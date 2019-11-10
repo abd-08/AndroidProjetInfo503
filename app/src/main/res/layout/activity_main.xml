@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.MainActivity">
+
+
+    <ListView
+        android:id="@+id/mainListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_linear"
+        android:layout_alignTop="@id/main_linear"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"></ListView>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/main_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/lanceur_rapide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:text="lanceur rapide" />
+
+        <EditText
+            android:id="@+id/mainEditText"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@id/choice_record"
+            android:layout_alignRight="@id/_choice_btn_add"
+            android:textColor="@android:color/holo_blue_dark"
+            tools:text="nouvelle item" />
+
+
+        <Button
+            android:id="@+id/id_main_btn_ajouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Ajouter"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

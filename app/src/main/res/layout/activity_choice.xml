@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/choice_groupe_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/choice_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:text="record" />
+
+        <EditText
+            android:id="@+id/_choice_editText"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@id/choice_record"
+            android:layout_alignRight="@id/_choice_btn_add"
+            android:textColor="@android:color/holo_blue_dark"
+            tools:text="nouvelle item" />
+
+
+        <Button
+            android:id="@+id/_choice_btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="btn_choice_add_clicked"
+            android:text="Ajouter"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/_choice_btn_run"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/_choice_gridview"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="btn_choice_run_clicked"
+        android:text="Lancer"
+        android:textColor="@android:color/white" />
+
+
+
+    <GridView
+        android:id="@+id/_choice_gridview"
+        android:layout_width="397dp"
+        android:layout_height="635dp"
+        android:layout_gravity="center"
+        android:longClickable="true"
+        android:numColumns="3" />
+
+    <Button
+        android:id="@+id/activity_choice_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/_choice_btn_run"
+        android:layout_marginTop="50dp"
+        android:background="@android:drawable/ic_menu_revert"
+        android:visibility="invisible" />
+
+</RelativeLayout>
